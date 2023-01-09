@@ -19,9 +19,10 @@
 .site-logo {
     display: flex;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 30px;
     height: 60px;
-    width: 165px;
+    width: 200px;
+    font-size: 100%;
     font-style: oblique;
     background: linear-gradient(to right, #f00 10%, #00f 15%, #0f0 35%, #f0f 50%, #0ff 60%, #ff5800 75%, #f05 87%, #ff7fd3 95%, #326d18 100%);
     -webkit-background-clip: text;
@@ -31,6 +32,7 @@
 .header-right-container{
     display: flex;
     align-items: center;
+    margin-right: 15px;
 }
 
 .flim-button{
@@ -39,9 +41,9 @@
     border: none;
     background-color: rgba(0, 0, 0, 0);
     
-    margin-right: 10px;
+    margin-right: 20px;
     padding: 0;
-    width: 20px;
+    width: 25px;
 }
 
 .search-button{
@@ -53,7 +55,7 @@
 
     margin-right: 10px;
     padding: 0;
-    width: 20px;
+    width: 25px;
 }
 
 .button-img{
