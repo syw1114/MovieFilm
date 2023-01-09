@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
     <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/body.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
 <body>
@@ -15,8 +17,74 @@
                 <div class="site-logo">
                     <h1>MovieFilm</h1>
                 </div>
+                <div class="header-right-container">
+                    <button class="flim-button" type="button">
+                        <img class="button-img" src="/static/image/header/flim.png">
+                    </button>
+                    <button class="search-button" type="button">
+                        <img class="button-img" src="/static/image/header/search.png">
+                    </button>
+                </div>
             </div>
         </header>
+        <main>
+            <h1 class="box-office">2023년 01월 09일 박스오피스</h1>
+            <div class="body-container">
+                    <section>
+                        <table class="tg" style="undefined; table-layout: fixed; width: 330px">
+                            <colgroup>
+                                <col style="width: 64px">
+                                <col style="width: 87px">
+                                <col style="width: 179px">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                  <th class="tg-g9gm">순위</th>
+                                  <th class="tg-g9gm">순위 변동</th>
+                                  <th class="tg-g9gm">영화명</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td class="tg-g9gm">1</td>
+                                  <td class="tg-g9gm">0</td>
+                                  <td class="tg-g9gm">아바타: 물의 길</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-g9gm">2</td>
+                                  <td class="tg-g9gm">0</td>
+                                  <td class="tg-g9gm">더 퍼스트 슬램덩크</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-g9gm">3</td>
+                                  <td class="tg-g9gm">0</td>
+                                  <td class="tg-g9gm">유령</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-g9gm">4</td>
+                                  <td class="tg-g9gm">0</td>
+                                  <td class="tg-g9gm">교섭</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-g9gm">5</td>
+                                  <td class="tg-g9gm">0</td>
+                                  <td class="tg-g9gm">영웅</td>
+                                </tr>
+                                <tr>
+                                  <td class="tg-g9gm">6</td>
+                                  <td class="tg-g9gm">0</td>
+                                  <td class="tg-g9gm">장화신은 고양이</td>
+                                </tr>
+                              </tbody>
+                        </table>
+                    </section>
+
+                    <section>
+                        <canvas id="myChart"></canvas>    
+                    </section>
+            </div>
+        </main>
     </div>
+    <script src="/static/js/main/main.js"></script>
 </body>
 </html>

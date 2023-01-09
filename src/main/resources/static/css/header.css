@@ -13,14 +13,52 @@
     width: 100%;
     height: 60px;
 
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0);;
 }
 
 .site-logo {
     display: flex;
     align-items: center;
-    color: wheat;
     margin-left: 10px;
-    width: 56px;
     height: 60px;
+    width: 155px;
+    font-style: oblique;
+    background: linear-gradient(to right, #f00 10%, #00f 15%, #0f0 35%, #f0f 50%, #0ff 60%, #ff5800 75%, #f05 87%, #ff7fd3 95%, #326d18 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+.header-right-container{
+    display: flex;
+    align-items: center;
+}
+
+.flim-button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    
+    margin-right: 10px;
+    padding: 0;
+    width: 20px;
+}
+
+.search-button{
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+
+    margin-right: 10px;
+    padding: 0;
+    width: 20px;
+}
+
+.button-img{
+    width: 100%;
+    color : white;
+}
+
+
