@@ -1,56 +1,36 @@
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'bar',
-
-    // The data for our dataset
+new Chart(document.getElementById("canvas"), {
+    type: 'horizontalBar',
     data: {
-        labels: ['아바타', '슬램덩크', '유령', '교섭', '영웅', '12월'],
+        labels: ['test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test', 'test'],
         datasets: [{
             label: '당일 관객수(만명)',
-            backgroundColor: [
-                'rgb(255, 99, 132)',
-                'rgb(54, 162, 235)',
-                'rgb(255, 206, 86)',
-                'rgb(75, 192, 192)',
-                'rgb(153, 102, 255)',
-                'rgb(255, 159, 64)'],
-            borderColor: ['rgb(255, 99, 132,1.5)',
-                'rgba(54, 162, 235, 1.5)',
-                'rgba(255, 206, 86, 1.5)',
-                'rgba(75, 192, 192, 1.5)',
-                'rgba(153, 102, 255, 1.5)',
-                'rgba(255, 159, 64, 1.5)'],
-            data: [2, 4, 7, 10, 14, 15]
+            data: [10, 3, 30, 23, 10, 5, 15, 25, 2, 4, 1, 13, 52, 23],
+            borderColor: "rgba(255, 201, 14, 1)",
+            backgroundColor: "rgba(255, 201, 14, 0.5)",
+            fill: false,
         }]
     },
-
-    // Configuration options go here
     options: {
-        title: {
-            display: true,
-            fontSize: 30,
-            fontColor: 'rgba(46, 49, 49, 1)'
+        responsive: true,
+        tooltips: {
+            mode: 'index',
+            intersect: false,
         },
-        legend: {
-            labels: {
-                fontColor: 'rgb(83, 51, 237)',
-                fontSize: 15
-            }
+        hover: {
+            mode: 'nearest',
+            intersect: true
         },
         scales: {
             xAxes: [{
-                ticks: {
-                    fontColor: 'rgb(27, 163, 156)',
-                    fontSize: '15'
-                }
+                display: true,
+
             }],
             yAxes: [{
+                display: true,
                 ticks: {
-                    beginAtZero: true,
-                    fontColor: 'rgba(246, 36, 89, 1)',
-                    fontSize: '15'
-                }
+                    autoSkip: false,
+                },
+
             }]
         }
     }
