@@ -1,9 +1,19 @@
 body{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+i {
+    font-style: normal;
+}
+#body-img{
     background-image: url('/static/image/main3.jpeg');
     background-size: cover;
 }
 main {
-    margin-top: 500px;
+    margin-top: 250px;
 }
 .body-container{
     display: flex;
@@ -31,9 +41,165 @@ section {
 
 
 .movie-container{
+    width: 100%;
+    height: 460px;
+
+    float: none;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(232, 232, 232, 0.37));
+}
+.movie-container .contents{
     width: 980px;
     height: 100%;
     margin: 0 auto;
-    
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(232, 232, 232, 0.37));
+}
+.movie-container .contents{
+    overflow: hidden;
+
+    padding: 50px 30px 60px;
+}
+.movie-container-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.movie-container-title .btn-title{
+    display: inline-flex
+}
+.movie-container-title .btn-title h3{
+    height: auto;
+    margin: 0;
+    line-height: 1em;
+    background-image: none;
+}
+.movie-container-title .btn-title h3 ~ h3{
+    position: relative;
+    margin-left: 32px;
+}
+
+.movie-container-title .btn_allView{
+    padding: 4px 32px 4px 15px;
+    font-size: 14px;
+    color: #222;
+    line-height: 1.429em;
+    background: transparent url(/static/image/main/arrowR_8x13.png) calc(100% - 7px) center/8px 13px scroll no-repeat;
+    border: 1px solid #e2e2e2;
+    border-radius: 15px;
+    box-shadow: 1px 1px 1px 0 rgb(0 0 0 / 5%);
+}
+
+.swiper{
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.movieChart{
+    overflow: visible;
+    position: relative;
+}
+.movieChart .swiper-wrapper {
+    counter-reset: movie-chart-counter;
+}
+.swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+.movieChart .swiper-wrapper .swiper-slide .img_wrap .screenType_wrap .screenType img {
+    width: 35px;
+    height: 7px;
+}
+.movieChart .swiper-wrapper .swiper-slide .img_wrap {
+    overflow: hidden;
+    position: relative;
+    width: 170px;
+    height: 234px;
+    border-radius: 10px;
+}
+.img_wrap > img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(0, -50%);
+}
+.movieChart .swiper-wrapper .swiper-slide .img_wrap .movieAgeLimit_wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    right: 6px;
+    top: 7px;
+    z-index: 4;
+}
+.movieChart .swiper-wrapper .swiper-slide .img_wrap .screenType_wrap {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 5;
+}
+.movieChart .swiper-wrapper .swiper-slide .img_wrap .screenType_wrap .screenType {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 34px;
+    height: 10px;
+    border: 1px solid rgba(223, 223, 223, 0.5);
+    border-radius: 3px;
+}
+.movieChart .swiper-wrapper .swiper-slide .img_wrap .movieChart_btn_wrap {
+    display: none;
+}
+.movieChart .swiper-wrapper .swiper-slide .movie_info_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movieChart .swiper-wrapper .swiper-slide .movie_info_wrap .movieName {
+    display: block;
+    flex-basis: 100%;
+    overflow: hidden;
+    margin-top: 14px;
+    font-size: 18px;
+    color: #222;
+    line-height: 1.167em;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.movieChart .swiper-wrapper .swiper-slide .movie_info_wrap > span {
+    display: block;
+    float: left;
+    margin-top: 9px;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.214em;
+}
+.movieChart .swiper-wrapper .swiper-slide .movie_info_wrap > span img {
+    width: 16px;
+    height: 16px;
+    vertical-align: top;
+}
+.movieChart .swiper-wrapper .swiper-slide .movie_info_wrap > span ~ span {
+    position: relative;
+    padding-left: 16px;
+}
+strong{
+    font-weight: 500;
 }

@@ -12,6 +12,7 @@
 </head>
 <body>
     <div id="container">
+      <div id="body-img">
         <header>
             <div class="header-container">
                 <div class="site-logo">
@@ -29,7 +30,7 @@
         </header>
         <main>
             <h1 class="box-office">2023년 01월 09일 박스오피스</h1>
-            <div class="body-container">
+              <div class="body-container">
                     <section>
                         <table class="tg" style="table-layout: fixed; width: 330px">
                             <colgroup>
@@ -109,9 +110,57 @@
                         <canvas id="canvas" height="340"></canvas>
                         </div>   
                     </section>
+              </div>
             </div>
             <div class="movie-container">
-              무비차트
+              <div class="contents">
+                <div class="movie-container-title">
+                  <div class="btn-title">
+                    <h3><a href="#none" class="active" id="btnMovie">무비차트</a></h3>
+                    <h3><a href="#none" id="btnReserMovie" class="">상영예정작</a></h3>
+                  </div>
+                  <a href="/movies/?lt=1&amp;ft=0" id="btn_allView_Movie" class="btn_allView">전체보기</a>
+                </div>
+                <div class="swiper movieChart">
+                    <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
+                        <div class="swiper-slide" style="width: 170.4px; margin-right: 32px;">
+                          <!-- 시작 -->
+                          <div class="img_wrap" data-scale="false">
+                            <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86072/86072_320.jpg" alt="아바타-물의 길" onerror="errorImage(this)">
+                            <div class="movieAgeLimit_wrap">
+                               <!-- 영상물 등급 노출 변경 2022.08.24 -->
+                                <i class="cgvIcon etc age12">12</i>
+                                <!-- <img src="https://img.cgv.co.kr/R2014/images/common/flag/age/12.png" alt="12세"> -->
+                                <!-- -->
+                                
+                            
+                            </div>
+                            <div class="screenType_wrap">
+                                
+                                <i class="screenType"><img src="https://img.cgv.co.kr/R2014/images/common/logo/imax_white.png" alt="imax"></i>
+                                
+                                <i class="screenType"><img src="https://img.cgv.co.kr/R2014/images/common/logo/forDX_white.png" alt="forDX"></i>
+                                
+                                <i class="screenType"><img src="https://img.cgv.co.kr/R2014/images/common/logo/screenx_white.png" alt="screenx"></i>
+                                
+                            </div>
+                            <div class="movieChart_btn_wrap">
+                                <a href="/movies/detail-view/?midx=86072" onclick="gaEventLog('PC_메인', '무비차트_영화상세', '아바타-물의 길');" class="btn_movieChart_detail">상세보기</a>
+                            
+                                <a href="/ticket/?MOVIE_CD=20031534&amp;MOVIE_CD_GROUP=20030160" onclick="gaEventLog('PC_메인', '무비차트_예매하기','아바타-물의 길')" class="btn_movieChart_ticketing">예매하기</a>
+                          
+                            </div>
+                        </div>
+                          <div class="movie_info_wrap">
+                              <strong class="movieName">아바타-물의 길</strong>
+                              <span> <img src="https://img.cgv.co.kr/R2014/images/common/egg/eggGoldenegggreat.png" alt="Golden Egg great"> 96%</span>
+                              <span>예매율 56.2%</span>
+                          </div>
+                      <!-- 끝 -->
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
         </main>
     </div>
