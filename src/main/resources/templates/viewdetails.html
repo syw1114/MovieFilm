@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/header.css">
+    <link rel="stylesheet" href="/static/css/details.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="header-container">
+                <div class="site-logo">
+                    <h1>MovieFilm</h1>
+                </div>
+                <div class="header-right-container">
+                    <button class="flim-button" type="button">
+                        <img class="button-img" src="/static/image/header/flim.png">
+                    </button>
+                    <button class="search-button" type="button">
+                        <img class="button-img" src="/static/image/header/search.png">
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="movie-detail">
+                <div class="box-image">
+                    <a href="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86072/86072_1000.jpg" title="포스터 크게 보기 새창" target="_blank">
+                        <span class="thumb-image"> 
+                            <img src="https://img.cgv.co.kr/Movie/Thumbnail/Poster/000086/86072/86072_320.jpg" alt="아바타-물의 길 포스터 새창" onerror="errorImage(this)">
+                            <i class="cgvIcon etc age12">12</i>
+                        </span> 
+                    </a>
+                </div>
+                <div class="box-contents">
+                    <div class="title"> 
+                        <strong>아바타-물의 길</strong>
+                        <p>Avatar: The Way of Water</p>
+                    </div>
+                    <div class="spec">
+                        <dl>
+                            <dt>감독 :&nbsp;</dt>
+                            <dd>
+                                
+                                    
+                                    <a href="/movies/persons/?pidx=2539">제임스 카메론</a>                    
+                                    
+                            </dd>
+                            
+                            <dd>
+                                
+                            </dd>
+            
+                            <dt>&nbsp;/ 배우 :&nbsp;</dt>
+                            <dd class="on">
+                                
+                                    
+                                    <a href="/movies/persons/?pidx=107004">조 샐다나</a>                    
+                                    
+                                    ,&nbsp;
+                                    <a href="/movies/persons/?pidx=106802">샘 워싱턴</a>                    
+                                    
+                                    ,&nbsp;
+                                    <a href="/movies/persons/?pidx=849">시고니 위버</a>                    
+                                    
+                                    ,&nbsp;
+                                    <a href="/movies/persons/?pidx=123144">우나 채플린</a>                    
+                                    
+                                    ,&nbsp;
+                                    <a href="/movies/persons/?pidx=273">지오바니 리비시</a>                    
+                                    
+                                    ,&nbsp;
+                                    <a href="/movies/persons/?pidx=17518">스티븐 랭</a>                    
+                                    
+                                    ,&nbsp;
+                                    <a href="/movies/persons/?pidx=1125">케이트 윈슬렛</a>                    
+                                    
+                            </dd>
+            
+                            <dt>장르 :&nbsp;액션,&nbsp;어드벤처,&nbsp;SF,&nbsp;스릴러</dt> 
+                            <dd></dd>
+                            <dt>&nbsp;/ 기본 :&nbsp;</dt>
+                            <dd class="on">12,&nbsp;192분,&nbsp;미국</dd>
+                            <dt>개봉 :&nbsp;</dt>
+                            <dd class="on">2022.12.14</dd>
+                        </dl>
+                    </div>
+                    <span class="like">
+                        <!-- 2020.05.07 영화찜하기 -> 프리에그 선택 변경(조회하여 노출) -->
+                        <a class="link-count" href="javascript:void (0);"><i class="sprite_preegg btn_md default"></i>프리에그</a>
+                    
+                        <a class="link-reservation" href="/ticket/?MOVIE_CD=20031534&amp;MOVIE_CD_GROUP=20030160">예매</a> 
+                    
+                    </span>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,180 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.movie-detail{
+    clear: both;
+    padding-top: 80px;
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+}
+.box-image {
+    margin-right: 30px;
+    width: 185px;
+    height: 260px;
+    float: left;
+}
+.box-image a {
+    display: block;
+}
+
+.thumb-image {
+    display: block;
+    position: relative;
+}
+.thumb-image img {
+    width: 185px;
+    height: 260px;
+}
+i.cgvIcon.etc.age12{
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0) url(/static/image/moviechart/다운로드.svg);
+    border-radius: 2px;
+}
+.thumb-image .cgvIcon.etc {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+}
+
+.box-contents {
+    width: 765px;
+    float: left;
+    position: relative;
+}
+
+.title {
+    display: block;
+    color: #333333;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.title p {
+    color: #666666;
+}
+
+.score {
+    margin-top: 25px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #d9d6c8;
+    font-size: 14px;
+}
+.score .percent {
+    vertical-align: middle;
+}
+strong {
+    font-weight: 500;
+}
+
+.score .egg-gage {
+    margin-top: -8px;
+    margin-left: 2px;
+    padding-left: 6px;
+    background: url(../images/common/bg/bg_writeinfo.gif) 0 12px no-repeat;
+}
+.egg-gage.small .egg.great {
+    width: 16px;
+    background-position: -41px -47px;
+}
+.egg-gage.small .egg {
+    display: inline-block;
+    margin-right: 2px;
+    width: 18px;
+    height: 26px;
+    background: url(/static/image/moviechart/sprite_egg.png) no-repeat 0 -47px;
+    vertical-align: middle;
+}
+.egg-gage.small .percent {
+    display: inline-block;
+    margin-top: 8px;
+    font-family: 'verdana';
+    font-size: 12px;
+    color: #000000;
+    vertical-align: middle;
+}
+.egg-gage {
+    display: inline-block;
+    width: auto !important;
+    line-height: 1;
+}
+
+
+.spec {
+    padding-top: 18px;
+    line-height: 1.6;
+    color: #333333;
+    font-size: 13px;
+    font-weight: 500;
+}
+.spec dt {
+    float: left;
+}
+.spec dd {
+    white-space: normal;
+    text-overflow: clip;
+    overflow: visible;
+    float: left;
+}
+.spec .on {
+    float: none;
+}
+dl {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.like {
+    margin-top: 22px;
+    display: inline-block;
+    margin-right: 3px;
+}
+.link-count {
+    width: 104px;
+    height: 33px;
+    border: 1px solid #222222;
+    line-height: 33px;
+    text-align: center;
+    display: inline-block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    margin-right: 2px;
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    /* background-color: #fdfcf0; */
+}
+.sprite_preegg.btn_md.default {
+    background-position: -30px 0px;
+}
+.sprite_preegg.btn_md {
+    width: 18px;
+    height: 22px;
+}
+.sprite_preegg {
+    background: url(/static/image/moviechart/sprite_egg.png) no-repeat 0 0;
+    background-size: 300px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.link-count i {
+    margin-right: 3px;
+}
+
+.link-reservation {
+    display: inline-block;
+    width: 91px;
+    height: 35px;
+    background: url(../images/sprite/sprite_btn.png) 0 0 no-repeat;
+    font: 0/0 a;
+    zoom: 1;
+    vertical-align: top;
+}

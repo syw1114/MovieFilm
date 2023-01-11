@@ -7,6 +7,7 @@
     <title>Main</title>
     <link rel="stylesheet" href="/static/css/header.css">
     <link rel="stylesheet" href="/static/css/body.css">
+    <link rel="stylesheet" href="/static/css/foot.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 </head>
@@ -492,8 +493,15 @@
                 </div>
               </div>
             </div>
+            <foot>
+              <div class="footChart" style="width: 900px; height: 450px;">
+                <!--차트가 그려질 부분-->
+                <canvas id="myChart"></canvas>
+              </div>
+            </foot>
         </main>
     </div>
     <script src="/static/js/main/main.js"></script>
+    <script src="/static/js/main/foot.js"></script>
 </body>
 </html>
