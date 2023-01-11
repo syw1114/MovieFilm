@@ -200,6 +200,65 @@ section {
     position: relative;
     padding-left: 16px;
 }
+
+i.cgvIcon.etc.age12{
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 0, 0, 0) url(/static/image/moviechart/다운로드.svg);
+    border-radius: 2px;
+}
+.movieChart .swiper-button-next {
+    overflow: hidden;
+    right: -20px;
+    top: calc(50% - 26px);
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 0;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);
+}
+.movieChart .swiper-button-next:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8) url(/static/image/moviechart/arrowL.png) center/9px 13px scroll no-repeat;
+    transform: rotate(-180deg);
+}
+.movieChart .swiper-button-prev {
+    overflow: hidden;
+    left: -20px;
+    top: calc(50% - 26px);
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    font-size: 0;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px 0 rgb(0 0 0 / 20%);
+}
+
+.movieChart .swiper-button-prev:after {
+    content: '';
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.8) url(/static/image/moviechart/arrowL.png) center/9px 13px scroll no-repeat;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    width: calc(var(--swiper-navigation-size)/ 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px - (var(--swiper-navigation-size)/ 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--swiper-navigation-color,var(--swiper-theme-color));
+}
+
 strong{
     font-weight: 500;
 }
