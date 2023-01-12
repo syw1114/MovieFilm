@@ -9,7 +9,29 @@ ol, ul {
 * {
     padding: 0;
 }
-
+div{
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    word-break: break-all;
+}
+body{
+    font-family: 'Noto Sans KR', 'CJONLYONENEW', '맑은 고딕', '돋움', Dotum, sans-serif;
+    font-weight: 400;
+}
+main{
+    position: relative;
+    width: 980px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+#container{
+    position: relative;
+    width: 100%;
+    z-index: 7;
+}
 .movie-detail{
     clear: both;
     padding-top: 80px;
@@ -140,14 +162,14 @@ dl {
     margin-inline-end: 0px;
 }
 
-.cols-content {
- 
-}
+
 .cols-content .col-detail:first-child {
     float: left;
 }
 .cols-content .col-detail {
+    margin-top: 5px;
     margin-left: 5px;
+    margin-bottom: 45px;
     position: relative;
     float: left;
 }
@@ -181,14 +203,61 @@ dl {
 
 .main-contents{
     position: relative;
-    margin: 0 auto;
-    padding-top: 25px;
-    width: 800px;
-    height: 400px;
-    top: 150px;
+    padding-top: 40px;
+    width: 900px;
+
 }
-.story-movie{
+.sect-story-movie{
+    margin-top: 35px;
     color: #333333;
     line-height: 1.8;
-   
+    margin-bottom: 50px;
+}
+
+[class|="wrap-movie"][class$="detail"] [class^="sect-"] {
+    padding-top: 40px;
+}
+div[class^="sect-"]:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.graph {
+    overflow: hidden;
+    border-bottom: 1px solid #cccccc;
+}
+.sect-graph.sect-graph-emotion li {
+    width: 50% !important;
+}
+.graph li:first-child {
+    border-left: none;
+}
+.graph li {
+    overflow: hidden;
+    height: 250px;
+}
+.graph li {
+    float: left;
+    padding-bottom: 10px;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    margin-right: -1px;
+}
+.graph li strong {
+    display: block;
+    height: 58px;
+    border-bottom: 1px solid #cccccc;
+    color: #4a4a4a;
+    text-align: center;
+    line-height: 58px;
+}
+.graph li > .chart {
+    min-height: 192px;
+}
+.jqplot-target {
+    position: relative;
+    color: #666;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    font-size: 1em;
 }
