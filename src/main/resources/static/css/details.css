@@ -2,6 +2,13 @@ a {
     color: inherit;
     text-decoration: none;
 }
+ol, ul {
+    list-style: none;
+}
+
+* {
+    padding: 0;
+}
 
 .movie-detail{
     clear: both;
@@ -113,12 +120,14 @@ strong {
 }
 .spec dt {
     float: left;
+    margin: 0;
 }
 .spec dd {
     white-space: normal;
     text-overflow: clip;
     overflow: visible;
     float: left;
+    margin: 0;
 }
 .spec .on {
     float: none;
@@ -131,50 +140,55 @@ dl {
     margin-inline-end: 0px;
 }
 
-.like {
-    margin-top: 22px;
-    display: inline-block;
-    margin-right: 3px;
+.cols-content {
+ 
 }
-.link-count {
-    width: 104px;
-    height: 33px;
-    border: 1px solid #222222;
-    line-height: 33px;
+.cols-content .col-detail:first-child {
+    float: left;
+}
+.cols-content .col-detail {
+    margin-left: 5px;
+    position: relative;
+    float: left;
+}
+.tab-menu {
+    clear: both;
     text-align: center;
+    margin-left: 0;
+}
+.tab-menu li:first-child {
+    background: url(../images/sprite/sprite_corner.png) 0 -20px no-repeat;
+}
+.tab-menu li {
     display: inline-block;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    margin-right: 2px;
-    color: #222222;
-    font-size: 14px;
-    font-weight: 400;
-    /* background-color: #fdfcf0; */
+    margin-left: -4px;
 }
-.sprite_preegg.btn_md.default {
-    background-position: -30px 0px;
+.tab-menu li:first-child a {
+    background: #fb4357;
 }
-.sprite_preegg.btn_md {
-    width: 18px;
-    height: 22px;
-}
-.sprite_preegg {
-    background: url(/static/image/moviechart/sprite_egg.png) no-repeat 0 0;
-    background-size: 300px;
+.tab-menu li a {
     display: inline-block;
-    vertical-align: middle;
-}
-.link-count i {
-    margin-right: 3px;
+    position: relative;
+    height: 39px;
+    padding: 0 15px;
+    background: #fb4357 url(../images/common/bg/bg_tebmenu-line.gif) 0 12px no-repeat;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 39px;
 }
 
-.link-reservation {
-    display: inline-block;
-    width: 91px;
-    height: 35px;
-    background: url(../images/sprite/sprite_btn.png) 0 0 no-repeat;
-    font: 0/0 a;
-    zoom: 1;
-    vertical-align: top;
+.main-contents{
+    position: relative;
+    margin: 0 auto;
+    padding-top: 25px;
+    width: 800px;
+    height: 400px;
+    top: 150px;
+}
+.story-movie{
+    color: #333333;
+    line-height: 1.8;
+   
 }
