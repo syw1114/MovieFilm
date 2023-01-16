@@ -227,3 +227,120 @@ div[class^="sect-"]:after {
     font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
     font-size: 1em;
 }
+.movie_grade{
+    margin-top: 30px;
+    position: relative;
+    border-top: 2px solid #666666;
+}
+.movie_grade .titlebox .title {
+    font-size: 24px;
+    line-height: 30px;
+   
+    position: absolute;
+    top: 35px;
+    left: 0;
+}
+.titlebox{
+    height: 134px;
+}
+
+.movie_grade .chart_total {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    height: 310px;
+}
+
+.movie_grade .chart_total .box {
+    width: 50%;
+    box-sizing: border-box;
+    border-left: 1px solid #dddddd;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+.movie_grade .chart_total .title {
+    position: relative;
+    padding-top: 28px;
+    padding-left: 30px;
+    font-size: 20px;
+    line-height: 1.5em;
+    color: #222222;
+    font-weight: 500;
+}
+
+.sort {
+    text-align: left;
+    margin: 20px 0 10px;
+   
+}
+.sort > li:first-child {
+    padding-left: 0;
+    border-left: none;
+}
+.sort > li {
+    display: inline-block;
+    padding: 0 8px 0 9px;
+    border-left: 1px solid #d7d3c8;
+    font-weight: 500;
+    color: #666666;
+    font-size: 13px;
+}
+.sort li.on > a {
+    color: #fb4357;
+}
+.sort li.on .arrow-down {
+    display: inline-block;
+    border-top: 4px solid #fb4357;
+}
+.sort .arrow-down {
+    display: none;
+    margin: 2px 0 0 5px;
+}
+.arrow-down {
+    display: inline-block;
+    border-top: 4px solid #000000;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    vertical-align: middle;
+}
+.wrap-movie-detail ul.point_col2 {
+    position: relative;
+    margin: 0 25px -2px;
+    overflow: hidden;
+}
+.sect-grade .wrap-persongrade > ul {
+    border-top: 1px solid #999999;
+    color: #333333;
+}
+.point_col2 {
+    margin: 0 auto -2px!important;
+    padding: 0 25px;
+}
+movie-detail .wrap-persongrade > ul.point_col2> li:nth-child(2n+1) {
+    width: 374px;
+    padding-left: 1px!important;
+    border-right: 1px solid #ddd;
+}
+.wrap-movie-detail ul.point_col2>li {
+    position: relative;
+    float: left;
+    margin-right: -1px;
+    border-right: none;
+    width: 50%;
+    height: 150px;
+    padding: 30px 0;
+    border-bottom: 1px solid #ddd;
+    zoom: 1;
+}
+.wrap-movie{
+    padding-top: 40px;
+}
+.wrap-movie img{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 62px;
+    height: 62px;
+}
