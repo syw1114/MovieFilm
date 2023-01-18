@@ -309,7 +309,7 @@ div[class^="sect-"]:after {
     margin: 0 25px -2px;
     overflow: hidden;
 }
-.sect-grade .wrap-persongrade > ul {
+.wrap-persongrade > ul {
     border-top: 1px solid #999999;
     color: #333333;
 }
@@ -322,7 +322,7 @@ movie-detail .wrap-persongrade > ul.point_col2> li:nth-child(2n+1) {
     padding-left: 1px!important;
     border-right: 1px solid #ddd;
 }
-.wrap-movie-detail ul.point_col2>li {
+.wrap-movie ul.point_col2>li {
     position: relative;
     float: left;
     margin-right: -1px;
@@ -344,3 +344,56 @@ movie-detail .wrap-persongrade > ul.point_col2> li:nth-child(2n+1) {
     width: 62px;
     height: 62px;
 }
+.point_col2 .writerinfo {
+    position: relative;
+    height: 24px;
+}
+.point_col2 .writerinfo li {
+    margin-bottom: 3px;
+    line-height: 20px!important;
+}
+.writerinfo li:first-child {
+    background: none;
+    padding-left: 0;
+}
+.writerinfo .writer-name {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.point_col2 .writerinfo .writer-etc {
+    position: absolute;
+    left: 0;
+    bottom: -146px;
+    padding: 0 !important;
+}
+.point_col2 .writerinfo .writer-etc > * {
+    vertical-align: middle;
+}
+.like {
+    display: inline-block;
+    margin-right: 3px;
+}
+.point_col2 .writerinfo .writer-etc .day {
+    padding-right: 8px;
+    margin-right: 6px;
+    background: url(../images/common/bg/bg_writeinfo.gif) no-repeat 100% 0;
+}
+.writerinfo li{
+    color: #666666;
+    font-size: 11px;
+    font-weight: 500;
+}
+.point_col2 .btn_point_like span+span, .point_col1 .btn_point_like span+span {
+    margin-left: 6px;
+}
+.point_col2 .btn_point_like span, .point_col1 .btn_point_like span {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: top;
+}
+.like_red{
+    margin-left: 60px;
+    margin-top: 2px;
+}
+
